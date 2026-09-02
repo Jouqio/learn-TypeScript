@@ -1,4 +1,4 @@
-# Belajar TypeScript: Panduan Lengkap Pemula hingga Menengah
+# Belajar TypeScript: Panduan Lengkap Pemula, Menengah, hingga Mahir
 
 Repositori materi dan latihan TypeScript bertahap, santai, dan interaktif dari nol hingga mahir.
 
@@ -55,6 +55,39 @@ Repositori materi dan latihan TypeScript bertahap, santai, dan interaktif dari n
   - [x] Sistem Manajemen Inventaris & Task Manager Generik
   - [x] Latihan 06 & Kunci Jawaban
 
+### 🟢 Bagian 3: 03-Lanjutan (Completed ✅)
+- [x] **Tahap 1: Generics Lanjutan**
+  - [x] Generic constraints (`extends`)
+  - [x] Generic dengan multiple type parameters & `keyof`
+  - [x] Default type parameter pada generic (`<T = string>`)
+  - [x] Latihan 01 & Kunci Jawaban
+- [x] **Tahap 2: Conditional & Mapped Types**
+  - [x] Conditional type (`T extends U ? X : Y`)
+  - [x] Mapped type (looping tipe dengan `keyof`)
+  - [x] Latihan 02 & Kunci Jawaban
+- [x] **Tahap 3: Discriminated Union (Union Type dengan "Tag")**
+  - [x] Tagged union pattern di real-world project (⭐)
+  - [x] Handling response API (success/error)
+  - [x] Latihan 03 & Kunci Jawaban
+- [x] **Tahap 4: Error Handling yang Type-Safe**
+  - [x] Custom Error class di TypeScript
+  - [x] Result / Either type pattern
+  - [x] Latihan 04 & Kunci Jawaban
+- [x] **Tahap 5: Runtime Validation dengan Zod**
+  - [x] Compile-time vs Runtime validation (⭐)
+  - [x] Schema validation & type inference dengan Zod
+  - [x] Latihan 05 & Kunci Jawaban
+- [x] **Tahap 6: Pengenalan Decorators (Konsep Dasar)**
+  - [x] Konsep Decorator & penggunaannya di framework (NestJS/Angular)
+  - [x] Class decorator & method decorator dasar
+  - [x] Latihan 06 & Kunci Jawaban
+- [x] **Tahap 7: Struktur Project Standar Industri**
+  - [x] Pola folder industri (`types/`, `services/`, `utils/`, `controllers/`)
+  - [x] Separation of concerns di TypeScript
+- [x] **Tahap 8: Mini Project Akhir (Sistem Order & Transaksi Sederhana)**
+  - [x] Integrasi discriminated union, custom error, Zod, generics, & arsitektur folder
+  - [x] Latihan 08 & Kunci Jawaban
+
 ---
 
 ## Struktur Lengkap Repositori
@@ -74,34 +107,37 @@ belajar-typescript/
 │   └── latihan/
 │       ├── latihan-01.ts
 │       ├── jawaban-01.ts
-│       ├── latihan-02.ts
-│       ├── jawaban-02.ts
-│       ├── latihan-03.ts
-│       ├── jawaban-03.ts
-│       ├── latihan-04.ts
-│       ├── jawaban-04.ts
+│       ├── ...
 │       ├── latihan-05.ts
 │       └── jawaban-05.ts
-└── 02-menengah/
-    ├── 01-union-intersection.ts
-    ├── 02-type-narrowing.ts
-    ├── 03-class-oop.ts
-    ├── 04-utility-types.ts
-    ├── 05-generics.ts
-    ├── 06-proyek-mini-menengah.ts
+├── 02-menengah/
+│   ├── 01-union-intersection.ts
+│   ├── 02-type-narrowing.ts
+│   ├── 03-class-oop.ts
+│   ├── 04-utility-types.ts
+│   ├── 05-generics.ts
+│   ├── 06-proyek-mini-menengah.ts
+│   └── latihan/
+│       ├── latihan-01.ts
+│       ├── jawaban-01.ts
+│       ├── ...
+│       ├── latihan-06.ts
+│       └── jawaban-06.ts
+└── 03-lanjutan/
+    ├── 01-generics-lanjutan.ts
+    ├── 02-conditional-mapped-types.ts
+    ├── 03-discriminated-union.ts
+    ├── 04-type-safe-error-handling.ts
+    ├── 05-runtime-validation-zod.ts
+    ├── 06-pengenalan-decorators.ts
+    ├── 07-struktur-project-industri.ts
+    ├── 08-proyek-mini-lanjutan.ts
     └── latihan/
         ├── latihan-01.ts
         ├── jawaban-01.ts
-        ├── latihan-02.ts
-        ├── jawaban-02.ts
-        ├── latihan-03.ts
-        ├── jawaban-03.ts
-        ├── latihan-04.ts
-        ├── jawaban-04.ts
-        ├── latihan-05.ts
-        ├── jawaban-05.ts
-        ├── latihan-06.ts
-        └── jawaban-06.ts
+        ├── ...
+        ├── latihan-08.ts
+        └── jawaban-08.ts
 ```
 
 ---
@@ -111,14 +147,14 @@ belajar-typescript/
 Gunakan perintah `npx tsx` di terminal:
 
 ```bash
-# Menjalankan materi:
-npx tsx 02-menengah/06-proyek-mini-menengah.ts
+# Menjalankan materi mini project akhir lanjutan:
+npx tsx 03-lanjutan/08-proyek-mini-lanjutan.ts
 
 # Menjalankan latihan buatanmu sendiri:
-npx tsx 02-menengah/latihan/latihan-06.ts
+npx tsx 03-lanjutan/latihan/latihan-08.ts
 
 # Menjalankan kunci jawaban:
-npx tsx 02-menengah/latihan/jawaban-06.ts
+npx tsx 03-lanjutan/latihan/jawaban-08.ts
 ```
 
 ---
@@ -139,3 +175,17 @@ npx tsx 02-menengah/latihan/jawaban-06.ts
 | **`Omit<T, K>`** | MEMBUANG properti tertentu dan mengambil sisanya. | Mengirim data user ke frontend tanpa menyertakan password. |
 | **`Record<K, T>`** | Membuat Kamus / Map pasangan Key bertipe K dan Value bertipe T. | Kamus kontak telepon: Nama divisi -> Nama kepala bagian. |
 | **Generics (`<T>`)** | Membuat function / interface / class yang fleksibel menerima berbagai tipe data dengan tetap menjaga keamanan tipe. | Kotak kargo universal berstiker transparan yang menyesuaikan isi barang di dalamnya. |
+| **Generic Constraints (`extends`)** | Membatasi tipe generic agar wajib memiliki bentuk atau properti tertentu (`<T extends PunyaPanjang>`). | Syarat masuk wahana permainan: Pengunjung bebas asal tinggi badan minimal 120 cm. |
+| **`keyof` Operator** | Menghasilkan union dari semua nama properti (key) sebuah tipe objek (`keyof User`). | Daftar menu resmi restoran (hanya boleh memesan yang terdaftar di buku menu). |
+| **Default Type Parameter** | Nilai fallback untuk generic jika tidak didefinisikan secara eksplisit (`<T = string>`). | Mode default aplikasi foto (otomatis filter natural jika user tidak memilih filter). |
+| **Conditional Type** | Percabangan logika tipe menggunakan ternary (`T extends U ? X : Y`). | Lampu indikator meteran listrik: jika daya > batas atas -> menyala merah, jika aman -> menyala hijau. |
+| **Mapped Type** | Transformasi tipe dengan looping properti objek (`[K in keyof T]`). | Cetakan kue seragam: mengubah semua jenis bahan kue menjadi bentuk bintang. |
+| **Discriminated Union** | Pola union objek dengan satu properti pembeda unik / Tag (`status: "loading" \| "success"`). | Kategori tiket konser (VIP, Festival, Tribune): stiker gelang warna membedakan akses pintu masuk. |
+| **Exhaustive Checking (`never`)** | Memastikan semua kemungkinan union sudah ditangani di switch-case agar tidak ada yang terlewat. | Checklist inspeksi pesawat: tombol tidak boleh dinyalakan sebelum semua item dicentang. |
+| **Custom Error Class** | Class turunan dari `Error` dengan metadata khusus seperti status HTTP dan kode error. | Surat tilang resmi polisi yang mencantumkan pasal pelanggaran dan nominal denda spesifik. |
+| **Result / Either Pattern** | Pola return nilai yang mengembalikan objek sukses (`Ok`) atau gagal (`Err`) tanpa melempar exception crash. | Paket kurir berstempel: penerima wajib membuka segel untuk melihat isi barang atau surat retur. |
+| **Runtime Validation (Zod)** | Validasi struktur data mentah saat aplikasi sedang berjalan di server/browser. | Petugas bea cukai bandara yang membongkar dan memeriksa barang bawaan penumpang secara langsung. |
+| **`z.infer` (Type Inference)** | Menghasilkan tipe data TypeScript otomatis langsung dari skema validasi Zod. | Cetak biru bangunan yang sekaligus otomatis menjadi daftar sertifikasi material bangunan. |
+| **Decorators (`@`)** | Fungsi khusus untuk menambah metadata atau memodifikasi class & method secara deklaratif. | Memasang kamera dashcam atau GPS pada mobil tanpa membongkar mesin internal. |
+| **Separation of Concerns (SoC)** | Memisahkan kode program berdasarkan tanggung jawabnya (`types/`, `services/`, `utils/`, `controllers/`). | Restoran profesional: Pelayan menerima pesanan (`controller`), Koki memasak (`service`), Pisau & alat dapur (`utils`), Buku resep (`types`). |
+| **Layered Architecture** | Pola arsitektur bertingkat dari pintu masuk request hingga manipulasi data bisnis. | Alur bank: Teller di loket depan -> Bagian brankas & sistem keuangan pusat. |
