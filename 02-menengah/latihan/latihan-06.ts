@@ -69,7 +69,7 @@ class PengelolaTugas<T extends { id: number; selesai: boolean }> {
 
 type TugasRingkas = Pick<Tugas, "id" | "judul" | "selesai">
 
-//4. Buat function `cetakStatusTugas(tugas: Tugas): void` untuk mencetak info status tugas.
+//4. Buat function `cetakStatusTugas(tugas: Tugas): void` untuk mencetak info status tugas
 
 function cetakStatusTugas(tugas: Tugas): void {
     console.log(`[Gudang Pusat] 📝 ID: ${tugas.id}, Judul: ${tugas.judul}, Status: ${tugas.selesai ? "Selesai" : "Belum Selesai"}`);
