@@ -1,10 +1,137 @@
-# Belajar TypeScript: Panduan Lengkap Pemula, Menengah, hingga Mahir
+# Belajar TypeScript
 
-Repositori materi dan latihan TypeScript bertahap, santai, dan interaktif dari nol hingga mahir.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![TypeScript](https://img.shields.io/badge/TypeScript-7.0-blue.svg?logo=typescript)](https://www.typescriptlang.org/)
+[![Runtime](https://img.shields.io/badge/Node.js-v24%2B-green.svg?logo=node.js)](https://nodejs.org/)
+[![Status](https://img.shields.io/badge/Status-Completed-success.svg)](#-progress--roadmap-belajar)
+
+Repositori ini berisi kurikulum mandiri, latihan interaktif, dan implementasi proyek mini TypeScript dari level dasar (*beginner*), menengah (*intermediate*), hingga tingkat lanjutan (*advanced*). Dibuat sebagai catatan perjalanan belajar terstruktur dengan pendekatan satu konsep per file dan studi kasus nyata standar industri.
 
 ---
 
-## Checklist Progres Belajar
+## Daftar Isi
+
+- [Prasyarat](#-prasyarat)
+- [Instalasi & Setup](#-instalasi--setup)
+- [Struktur Folder](#-struktur-folder)
+- [Cara Menjalankan File](#-cara-menjalankan-file)
+- [Progress / Roadmap Belajar](#-progress--roadmap-belajar)
+  - [🟢 Bagian 1: 01-Dasar](#-bagian-1-01-dasar-completed-)
+  - [🟢 Bagian 2: 02-Menengah](#-bagian-2-02-menengah-completed-)
+  - [🟢 Bagian 3: 03-Lanjutan](#-bagian-3-03-lanjutan-completed-)
+- [Glossary / Rangkuman Istilah](#-glossary--rangkuman-istilah)
+- [Tech Stack](#-tech-stack)
+- [Lisensi](#-lisensi)
+- [Author](#-author)
+
+---
+
+## Prasyarat
+
+Sebelum memulai, pastikan perangkat kamu telah terpasang:
+
+- **Node.js** (versi 18.x atau yang lebih baru; disarankan LTS / Current v24+)
+- **npm** (biasanya otomatis terpasang bersama Node.js) atau package manager lain (`pnpm` / `yarn`)
+
+Cek instalasi Node.js dan npm di terminal:
+```bash
+node -v
+npm -v
+```
+
+---
+
+## Instalasi & Setup
+
+1. **Clone repository ini ke komputer lokal:**
+   ```bash
+   git clone https://github.com/Jouqio/learn-TypeScript.git
+   cd learn-TypeScript
+   ```
+
+2. **Instal seluruh dependencies proyek:**
+   ```bash
+   npm install
+   ```
+
+3. **Verifikasi environment:**
+   Pastikan compiler TypeScript dan runner `tsx` siap digunakan. Tidak diperlukan konfigurasi `.env` tambahan untuk menjalankan repositori ini.
+
+---
+
+## Struktur Folder
+
+```text
+belajar-typescript/
+├── package.json
+├── tsconfig.json
+├── LICENSE
+├── .gitignore
+├── README.md
+├── 01-dasar/
+│   ├── 01-perkenalan.ts
+│   ├── 02-tipe-data.ts
+│   ├── 03-function.ts
+│   ├── 04-interface.ts
+│   ├── 05-proyek-mini-buku.ts
+│   └── latihan/
+│       ├── latihan-01.ts
+│       ├── jawaban-01.ts
+│       ├── ...
+│       ├── latihan-05.ts
+│       └── jawaban-05.ts
+├── 02-menengah/
+│   ├── 01-union-intersection.ts
+│   ├── 02-type-narrowing.ts
+│   ├── 03-class-oop.ts
+│   ├── 04-utility-types.ts
+│   ├── 05-generics.ts
+│   ├── 06-proyek-mini-menengah.ts
+│   └── latihan/
+│       ├── latihan-01.ts
+│       ├── jawaban-01.ts
+│       ├── ...
+│       ├── latihan-06.ts
+│       └── jawaban-06.ts
+└── 03-lanjutan/
+    ├── 01-generics-lanjutan.ts
+    ├── 02-conditional-mapped-types.ts
+    ├── 03-discriminated-union.ts
+    ├── 04-type-safe-error-handling.ts
+    ├── 05-runtime-validation-zod.ts
+    ├── 06-pengenalan-decorators.ts
+    ├── 07-struktur-project-industri.ts
+    ├── 08-proyek-mini-lanjutan.ts
+    └── latihan/
+        ├── latihan-01.ts
+        ├── jawaban-01.ts
+        ├── ...
+        ├── latihan-08.ts
+        └── jawaban-08.ts
+```
+
+---
+
+## Cara Menjalankan File
+
+Project ini menggunakan **[`tsx`](https://github.com/privatenumber/tsx)** (*TypeScript Execute*), alat eksekusi TypeScript instan berbasis esbuild tanpa perlu melakukan *build/compile* manual ke JavaScript (`tsc`) terlebih dahulu.
+
+Jalankan perintah berikut di terminal:
+
+```bash
+# 1. Menjalankan materi (contoh materi Tahap 8 Lanjutan):
+npx tsx 03-lanjutan/08-proyek-mini-lanjutan.ts
+
+# 2. Menjalankan latihan mandiri buatanmu sendiri:
+npx tsx 03-lanjutan/latihan/latihan-08.ts
+
+# 3. Menjalankan kunci jawaban latihan:
+npx tsx 03-lanjutan/latihan/jawaban-08.ts
+```
+
+---
+
+## Progress / Roadmap Belajar
 
 ### 🟢 Bagian 1: 01-Dasar (Completed ✅)
 - [x] **Tahap 1: Kenalan dengan TypeScript**
@@ -90,76 +217,7 @@ Repositori materi dan latihan TypeScript bertahap, santai, dan interaktif dari n
 
 ---
 
-## Struktur Lengkap Repositori
-
-```text
-belajar-typescript/
-├── package.json
-├── tsconfig.json
-├── .gitignore
-├── README.md
-├── 01-dasar/
-│   ├── 01-perkenalan.ts
-│   ├── 02-tipe-data.ts
-│   ├── 03-function.ts
-│   ├── 04-interface.ts
-│   ├── 05-proyek-mini-buku.ts
-│   └── latihan/
-│       ├── latihan-01.ts
-│       ├── jawaban-01.ts
-│       ├── ...
-│       ├── latihan-05.ts
-│       └── jawaban-05.ts
-├── 02-menengah/
-│   ├── 01-union-intersection.ts
-│   ├── 02-type-narrowing.ts
-│   ├── 03-class-oop.ts
-│   ├── 04-utility-types.ts
-│   ├── 05-generics.ts
-│   ├── 06-proyek-mini-menengah.ts
-│   └── latihan/
-│       ├── latihan-01.ts
-│       ├── jawaban-01.ts
-│       ├── ...
-│       ├── latihan-06.ts
-│       └── jawaban-06.ts
-└── 03-lanjutan/
-    ├── 01-generics-lanjutan.ts
-    ├── 02-conditional-mapped-types.ts
-    ├── 03-discriminated-union.ts
-    ├── 04-type-safe-error-handling.ts
-    ├── 05-runtime-validation-zod.ts
-    ├── 06-pengenalan-decorators.ts
-    ├── 07-struktur-project-industri.ts
-    ├── 08-proyek-mini-lanjutan.ts
-    └── latihan/
-        ├── latihan-01.ts
-        ├── jawaban-01.ts
-        ├── ...
-        ├── latihan-08.ts
-        └── jawaban-08.ts
-```
-
----
-
-## Cara Menjalankan File
-
-Gunakan perintah `npx tsx` di terminal:
-
-```bash
-# Menjalankan materi mini project akhir lanjutan:
-npx tsx 03-lanjutan/08-proyek-mini-lanjutan.ts
-
-# Menjalankan latihan buatanmu sendiri:
-npx tsx 03-lanjutan/latihan/latihan-08.ts
-
-# Menjalankan kunci jawaban:
-npx tsx 03-lanjutan/latihan/jawaban-08.ts
-```
-
----
-
-## Rangkuman Istilah Penting (Glossary Lengkap)
+## Glossary / Rangkuman Istilah
 
 | Istilah | Penjelasan Sederhana | Analogi Sehari-hari |
 | :--- | :--- | :--- |
@@ -189,3 +247,24 @@ npx tsx 03-lanjutan/latihan/jawaban-08.ts
 | **Decorators (`@`)** | Fungsi khusus untuk menambah metadata atau memodifikasi class & method secara deklaratif. | Memasang kamera dashcam atau GPS pada mobil tanpa membongkar mesin internal. |
 | **Separation of Concerns (SoC)** | Memisahkan kode program berdasarkan tanggung jawabnya (`types/`, `services/`, `utils/`, `controllers/`). | Restoran profesional: Pelayan menerima pesanan (`controller`), Koki memasak (`service`), Pisau & alat dapur (`utils`), Buku resep (`types`). |
 | **Layered Architecture** | Pola arsitektur bertingkat dari pintu masuk request hingga manipulasi data bisnis. | Alur bank: Teller di loket depan -> Bagian brankas & sistem keuangan pusat. |
+
+---
+
+## Tech Stack
+
+- **Language**: [TypeScript](https://www.typescriptlang.org/) (v7.0.2)
+- **Runtime & Execution**: [Node.js](https://nodejs.org/) & [tsx](https://github.com/privatenumber/tsx) (v4.23.13)
+- **Validation Library**: [Zod](https://zod.dev/) (v4.5.4)
+- **Type Definitions**: [@types/node](https://www.npmjs.com/package/@types/node) (v26.4.1)
+
+---
+
+## Lisensi
+
+Project ini dilisensikan di bawah **MIT License**. Silakan lihat file [LICENSE](LICENSE) untuk informasi selengkapnya.
+
+---
+
+## Author
+
+- **Syauqi Nuzul Abdi** — [@Jouqio](https://github.com/Jouqio)
