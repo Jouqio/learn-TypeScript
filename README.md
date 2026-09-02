@@ -1,11 +1,17 @@
+<div align="center">
+
 # Belajar TypeScript
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-7.0-blue.svg?logo=typescript)](https://www.typescriptlang.org/)
 [![Runtime](https://img.shields.io/badge/Node.js-v24%2B-green.svg?logo=node.js)](https://nodejs.org/)
-[![Status](https://img.shields.io/badge/Status-Completed-success.svg)](#-progress--roadmap-belajar)
+[![Status](https://img.shields.io/badge/Status-Completed-success.svg)](#progress--roadmap-belajar)
 
-Repositori ini berisi kurikulum mandiri, latihan interaktif, dan implementasi proyek mini TypeScript dari level dasar (*beginner*), menengah (*intermediate*), hingga tingkat lanjutan (*advanced*). Dibuat sebagai catatan perjalanan belajar terstruktur dengan pendekatan satu konsep per file dan studi kasus nyata standar industri.
+<p>
+Repositori ini berisi kurikulum mandiri, latihan interaktif, dan implementasi proyek mini TypeScript dari level dasar (<em>beginner</em>), menengah (<em>intermediate</em>), hingga tingkat lanjutan (<em>advanced</em>). Dibuat sebagai catatan perjalanan belajar terstruktur dengan pendekatan satu konsep per file dan studi kasus nyata standar industri.
+</p>
+
+</div>
 
 ---
 
