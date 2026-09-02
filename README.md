@@ -6,7 +6,7 @@ Repositori materi dan latihan TypeScript bertahap, santai, dan interaktif dari n
 
 ## 📋 Checklist Progres Belajar
 
-### 🟢 Bagian 1: 01-Dasar (Selesai ✅)
+### 🟢 Bagian 1: 01-Dasar (Completed ✅)
 - [x] **Tahap 1: Kenalan dengan TypeScript**
   - [x] Apa itu TypeScript & Bedanya dengan JavaScript
   - [x] Inisialisasi Project (`package.json`, `tsconfig.json`)
@@ -31,7 +31,7 @@ Repositori materi dan latihan TypeScript bertahap, santai, dan interaktif dari n
   - [x] Program Manajemen Data Perpustakaan Buku
   - [x] Latihan 05 (Sistem Kasir Restoran) & Kunci Jawaban
 
-### 🟡 Bagian 2: 02-Menengah (Selesai ✅)
+### 🟢 Bagian 2: 02-Menengah (Completed ✅)
 - [x] **Tahap 1: Union & Intersection Types**
   - [x] Union Type (`|` / ATAU)
   - [x] Literal Union (`"admin" | "user"`)
