@@ -1,10 +1,10 @@
-# 🚀 Belajar TypeScript: Panduan Lengkap Pemula hingga Menengah
+# Belajar TypeScript: Panduan Lengkap Pemula hingga Menengah
 
 Repositori materi dan latihan TypeScript bertahap, santai, dan interaktif dari nol hingga mahir.
 
 ---
 
-## 📋 Checklist Progres Belajar
+## Checklist Progres Belajar
 
 ### 🟢 Bagian 1: 01-Dasar (Completed ✅)
 - [x] **Tahap 1: Kenalan dengan TypeScript**
@@ -57,7 +57,7 @@ Repositori materi dan latihan TypeScript bertahap, santai, dan interaktif dari n
 
 ---
 
-## 📂 Struktur Lengkap Repositori
+## Struktur Lengkap Repositori
 
 ```text
 belajar-typescript/
@@ -106,7 +106,7 @@ belajar-typescript/
 
 ---
 
-## ⚡ Cara Menjalankan File
+## Cara Menjalankan File
 
 Gunakan perintah `npx tsx` di terminal:
 
@@ -123,7 +123,7 @@ npx tsx 02-menengah/latihan/jawaban-06.ts
 
 ---
 
-## 📖 Rangkuman Istilah Penting (Glossary Lengkap)
+## Rangkuman Istilah Penting (Glossary Lengkap)
 
 | Istilah | Penjelasan Sederhana | Analogi Sehari-hari |
 | :--- | :--- | :--- |
