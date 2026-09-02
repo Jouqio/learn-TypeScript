@@ -1,6 +1,6 @@
 /**
  * ========================================================
- * 📘 TAHAP 1: UNION & INTERSECTION TYPES
+ * TAHAP 1: UNION & INTERSECTION TYPES
  * File: 02-menengah/01-union-intersection.ts
  * ========================================================
  *
@@ -11,13 +11,13 @@
  * 4. Contoh Salah vs Benar
  */
 
-console.log("=== 🚀 BELAJAR TYPESCRIPT MENENGAH: TAHAP 1 ===");
+console.log("=== BELAJAR TYPESCRIPT MENENGAH: TAHAP 1 ===");
 
 // --------------------------------------------------------
 // 1. UNION TYPES (`|` / ATAU)
 // --------------------------------------------------------
 /**
- * 🎟️ ANALOGI UNION TYPE:
+ * ANALOGI UNION TYPE:
  * Bayangkan pintu masuk bioskop:
  * Penonton boleh menunjukkan tiket berbentuk "Kertas Fisik" ATAU "QR Code di HP".
  * Kedua-duanya sama-sama diterima!
@@ -62,7 +62,7 @@ console.log("\n[2] Literal Union Status Pesanan:", statusOrder);
 // 2. INTERSECTION TYPES (`&` / DAN)
 // --------------------------------------------------------
 /**
- * 👔 ANALOGI INTERSECTION TYPE:
+ * ANALOGI INTERSECTION TYPE:
  * Bayangkan seorang "Karyawan Senior yang dipromosikan jadi Manajer":
  * - Dia punya data sebagai "Karyawan Biasa" (Nama, NIP, Gaji).
  * - DAN dia juga punya hak sebagai "Manajer" (Departemen yang dibawahi, Limit Approval).
