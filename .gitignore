@@ -1,0 +1,15 @@
+# Dependencies (tidak perlu di-push ke GitHub)
+node_modules/
+
+# Hasil build / compile
+dist/
+build/
+
+# Log files
+*.log
+npm-debug.log*
+
+# File sistem & IDE
+.DS_Store
+Thumbs.db
+.vscode/
